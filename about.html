@@ -1,0 +1,158 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Ana's Page | About</title>
+    <meta name="author" content="Ana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class='centre'>
+        <h1>About Me!</h1>
+        <a class="button1" href="home.html">Home</a>
+		<a class="button1" href="blog">My Blog</a>
+		<p class="turquoise text">Hi, I'm Ana - I'm a 16 year old who really enjoys doing a whole load of things, especially <u>cyber security (forensics!) and computer science.</u> Thanks for visiting my page, and I hope this provides a bit of insight into a few of my many interests. Check out my blog (linked above) for more!</p>
+		<p class="purple text" style='font-size: 5vmin;'>Things I've Done!<br>
+			<ul class="purple text">
+				<li>Google Code-In - <span>I was a winner of <a href="https://codein.withgoogle.com/" class="purple">Google's Code-In contest</a>, a competition meant to encourage 13-17 year olds into open-source development. I won for the organisation PostgreSQL in 2018.</span></li><br>
+				<li>Cyber - <span>I have attended <a href="https://joincyberdiscovery.com/" class="purple">Cyber Discovery's</a> Elite camps in both 2018 and 2019, being one of 170 selected from 23000 in 2018, and winning a SANS coin and becoming GIAC-certified in the latter year. I also attended CSC's Team UK Qualifier in March 2019, and participate in loads of CTFs with my CTF team, <a href="https://ctftime.org/team/77631" class="purple">PWN to 0xE4.</a> Finally, I came 2nd in <a href="https://www.cybersecuritychallenge.org.uk/" class="purple">CyberCenturion VI</a> with my team, System of a Downtime.</span></li>
+			</ul>
+		</p>
+		<p class="pink text" style='font-size: 5vmin;'>Current Projects...<br>
+			<ul class="pink text">
+				<li>GitHub - <span>You can check out my GitHub over <a href="https://github.com/lightspeedana" class="pink">here</a>. I mostly write projects in Python, and write websites with HTML and CSS (like this one!), but I also can write in JS, Ruby, and C and recently learned C++. I'd like to expand to Haskell in the future.</span></li><br>
+				<li>Stegosaurus - <span>As a participant in CTFs, I wanted to create a GUI tool to automate Steg and some Forensics challenges. The result of this is Stegosaurus, a Python project I'm working on in order to solve such challenges with worked solutions, featuring a user-friendly interface letting both beginners and experts use it.</span></li><br>
+				<li>Cyber Discovery Discord - <span>I admin the <a href="http://discord.cyberdiscoverycommunity.uk" class="pink">Cyber Discovery Discord server</a> currently, and contribute to some of its projects sometimes. I am currently building a ModLog system, allowing for admins to track rule infractions by user.</span></li>
+			</ul>
+		</p>
+		<p class="green text" style='font-size: 5vmin;'>Other Stuff...<br>
+			<ul class="green text">
+				<li>Academics - <span>I'm currently an A Level student studying Maths, Further Maths, Chemistry, Computer Science and English Literature.</span></li><br>
+				<li>Music - <span>I play a bunch of instruments, including violin, piano and harmonica, and am learning more as I go. I also compose my own music and dabble in electronic production, some examples of which are available on my YouTube channel.</span></li><br>
+				<li>Volunteering - <span>I volunteer as a Form Prefect and in Year 9 CS Classes in school. I also am a member of 2 orchestras.</span></li>
+			</ul>
+		</p>
+    </div>
+</body>
+</html>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+    height: 100vh;
+}
+
+body{
+    background-color: #FA8BFF;
+	background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 2%;
+}
+
+h1{
+    color: #287E9E;
+    font-family: 'Quicksand', sans-serif;
+	font-size: 10vmin;
+	margin-bottom: 1%;
+}
+
+ul{
+	list-style-position: inside;
+	font-size: 4vmin;
+	padding-left: 0;
+}
+
+span{
+	font-family: 'Montserrat', sans-serif;
+}
+
+.turquoise{
+	color: #287E9E;
+}
+
+.purple{
+	color: #7147CB;
+}
+
+.green{
+	color: #31CA74;
+}
+
+.pink{
+	color: #B361CD;
+}
+
+.text{
+	font-family: 'Quicksand', sans-serif;
+	font-size: 4vmin;
+}
+
+.button1{
+    color: #fff;
+    font-size: 4vmin;
+    font-family: 'Quicksand', sans-serif;
+    background: #287E9E;
+    padding: 2vw;
+    border-radius: 1vw;
+    display: inline-block;
+    border: none;
+    text-align: center;
+	text-decoration: none;
+}
+
+.button1:hover{
+    background: #1A4B5D;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+.centre{
+    overflow: auto;
+	padding: 2vw;
+    max-width: 1050px;
+    margin: 2% auto;
+	text-align: center;
+	background: white;
+	box-shadow: 0px 0px 24px #000000;
+	height: min-content;
+	animation: fadeIn ease 2s;
+	-webkit-animation: fadeIn ease 2s;
+	-moz-animation: fadeIn ease 2s;
+	-o-animation: fadeIn ease 2s;
+	-ms-animation: fadeIn ease 2s;
+}
+	
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}	
+</style>

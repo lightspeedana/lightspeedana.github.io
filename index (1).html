@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+html {
+    height: 100%;
+}
+
+body{
+    background-color: #FA8BFF;
+	background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+	font-size: 50px;
+	text-shadow: 0px 0px 6px #000000;
+}
+
+.button1{
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Quicksand', sans-serif;
+    background: #2E5CFF;
+    padding: 20px;
+    border-radius: 5px;
+    display: inline-block;
+    border: none;
+    text-align: center;
+	text-decoration: none;
+}
+
+.button1:hover{
+    background: #14276C;
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+}
+
+.centre{
+    text-align: center;
+}
+
+.typewriter{
+    max-width: 90vw;
+	word-break: break-all;
+	white-space: normal;
+    line-height: 1.25;
+}
+
+.caret {
+    margin-left: .15em;
+    vertical-align: bottom;
+    display: inline-block;
+    height: 1.25em;
+    width: .15em;
+    background: #2E5CFF;
+    animation: blink .5s step-end infinite;
+}
+
+.letter {
+    display: inline-block;
+    white-space: pre;
+    animation: grow 100ms normal forwards;
+    overflow-x: hidden;
+    padding: 10px;
+    margin: -10px;
+    vertical-align: middle;
+}
+
+@keyframes blink {
+    from, to { opacity: 0; }
+    50% { opacity: 1; }
+}
+@keyframes grow {
+    from { max-width: 0; }
+    to { max-width: 1.5em; }
+}
+</style>
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <title>Ana's Page | Home</title>
+    <meta name="author" content="Ana">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+<body>
+    <div class='centre'>
+        <h1 class='typewriter'><span class="ttext"></span><div class="caret"></div></h1>
+        <a class="button1" href="about.html">About Me</a>
+		<a class="button1" href="blog">My Blog</a>
+    </div>
+</body>
+
+<script>
+let chars = 0, text = "Hi, my name is Ana ❤", el = document.querySelector(".ttext");
+const animate = () => {
+    let span = document.createElement("span");
+    span.className = 'letter';
+    span.innerHTML = text[chars++];
+    el.append(span);
+    if (chars < text.length) setTimeout(animate, 40)
+}
+animate();
+</script>
+</html>
+
+

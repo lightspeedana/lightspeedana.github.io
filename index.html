@@ -33,12 +33,20 @@
             font-family: 'Work Sans', sans-serif;
             font-weight: 900;
             padding-left: 0;
-            list-style-position: inside;
-            font-size: 4vmin;
+            list-style-type: none;
+            font-size: 8vmin;
+            display: inline;
             color: #1f99b8;
+        }
+        li{
+            display: inline;
+        }
+        a:hover{
+            color: #e6c300 !important;
         }
         a{
             color: #1f99b8;
+            transition: color 0.5s ease;
         }
         .button {
             background-color: #000; /* Green */
@@ -51,7 +59,6 @@
             text-align: center;
             text-decoration: none;
             display: inline-block;
-            cursor: pointer;
             transition: 0.3s;
         }
         .button:hover{
@@ -74,6 +81,7 @@
     </style>
     <head>
         <title>Ana's Page</title>
+        <script src="https://kit.fontawesome.com/50d92f7f69.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id='centred'>
@@ -84,13 +92,15 @@
                 </div>
             
         </div>
-        <ul>
-            <li><a href="https://blog.ana14.dev">Blog</a></li>
-            <li><a href="https://twitter.com/_LightSpeed4_">Twitter</a></li>
-            <li><a href="https://github.com/lightspeedana">GitHub</a></li>
-        </ul>
+        <div id="wrapper">
+            <ul>
+                <li><a href="https://blog.ana14.dev"><i class="fas fa-edit"></i></a></li>
+                <li><a href="https://twitter.com/_LightSpeed4_"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="https://github.com/lightspeedana"><i class="fab fa-github"></i></a></li>
+            </ul>
+        </div>
         <div id='wrapper'>
-            <p class='button'>Click Me!</p>
+            <p class='button'>Switch Colours...</p>
         </div>
     </body>
 </html>
@@ -103,12 +113,18 @@
     document.getElementsByTagName('h1')[0].style.color="black";
     document.getElementsByTagName('body')[0].style.backgroundColor="#fffefa";
     document.getElementsByTagName('h2')[0].style.color="#a80000";
+    document.getElementsByTagName('a')[0].style.color="#1f99b8";
+    document.getElementsByTagName('a')[1].style.color="#1f99b8";
+    document.getElementsByTagName('a')[2].style.color="#1f99b8";
   } else {
     this.style.color="black";
     this.style.backgroundColor="white";
     document.getElementsByTagName('h1')[0].style.color="white";
     document.getElementsByTagName('body')[0].style.backgroundColor="#212121";
     document.getElementsByTagName('h2')[0].style.color="#e6c300";
+    document.getElementsByTagName('a')[0].style.color="#ff4d40";
+    document.getElementsByTagName('a')[1].style.color="#ff4d40";
+    document.getElementsByTagName('a')[2].style.color="#ff4d40";
   }  
 }
 </script>

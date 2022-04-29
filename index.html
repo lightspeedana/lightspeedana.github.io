@@ -1,139 +1,76 @@
-<!doctype html>
-<html>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@600;900&display=swap');
-        body{
-            background-color: #fffefa;
-            margin: 5%;
-            transition: color 3s ease;
-        }
-        h1, h2{
-            font-family: 'Work Sans', sans-serif;
-        }
-        img{
-            border-radius: 15%;
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            float: left;
-            height: 150px;
-            width: 150px;
-        }
-        h1{
-            font-weight: 900;
-            font-size: 8vmin;
-            transition: color 1s ease;
-        }
-        h2{
-            font-weight: 600;
-            color: #a80000;
-            font-size: 4vmin;
-            transition: color 0.5s ease;
-        }
-        ul{
-            text-align: center;
-            font-family: 'Work Sans', sans-serif;
-            font-weight: 900;
-            padding-left: 0;
-            list-style-type: none;
-            font-size: 8vmin;
-            display: inline;
-            color: #1f99b8;
-        }
-        li{
-            display: inline;
-        }
-        a:hover{
-            color: #e6c300 !important;
-        }
-        a{
-            color: #1f99b8;
-            transition: color 0.5s ease;
-        }
-        .button {
-            background-color: #000; /* Green */
-            border: none;
-            font-family: 'Work Sans', sans-serif;
-            font-size: 2em;
-            border-radius: 30px;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            transition: 0.3s;
-            cursor: pointer;
-        }
-        .button:hover{
-            background-color: #e6c300 !important;
-        }
-        #centred{
-            height: 100%;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        #text-right{
-            float: right;
-            margin-left: 8%;
-        }
-        #wrapper{
-            text-align: center;
-        }
-    </style>
-    <head>
-        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/randomColor.js"></script>
-        <title>Ana's Page</title>
-        <script src="https://kit.fontawesome.com/50d92f7f69.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <div id='centred'>
-                <img src="https://avatars2.githubusercontent.com/u/17798041?s=460&u=e409e960b0bd7c21fc9157e84eb32592728f8be5&v=4">
-                <div id='text-right'>
-                    <h1>Hi, I'm Ana.</h1>
-                    <h2>Forensics and Cyber enthusiast, GCI Winner in 2018 for PostgreSQL, CyberStart Elite Attendee 2018 and 2019, GCFE and GCIH certified, and a secondary school student.</h2>
-                </div>
-            
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My custom Bulma website</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+  </head>
+  <body>
+
+    <div class="hero is-fullheight is-info has-background">
+      <img class="hero-background is-transparent" src="bg.jpg" />
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-1">
+            HI, I'M ANA
+          </h1>
+          <h3 class="subtitle is-family-secondary is-size-3">
+            I'm a BSc Cyber Security Student.
+          </h3>
+          <button class="button is-primary is-family-secondary"> <a href="https://blog.anaisonlineto.day">Check out my Blog</a></button>
+          <br><br><h3 class="subtitle is-family-secondary">
+            Scroll down to see more ↓
+          </h3>
         </div>
-        <div id="wrapper">
-            <ul>
-                <li><a href="https://blog.ana14.dev"><i class="fas fa-edit"></i></a></li>
-                <li><a href="https://twitter.com/_LightSpeed4_"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://github.com/lightspeedana"><i class="fab fa-github"></i></a></li>
-            </ul>
+      </div>
+    </div>
+    <div class="hero is-halfheight is-success">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-1">
+            ABOUT ME
+          </h1>
+          <h3 class="subtitle is-family-secondary is-size-3">
+            Hi there! Thanks for taking the time to visit.
+          </h3>
+          <h3 class="subtitle is-family-secondary">
+            I'm a student, <a href="https://blog.anaisonlineto.day"><u>blogger</u></a>, coder, speaker and hobbyist.
+          </h3>
+          <h3 class="subtitle is-family-secondary">
+            I'm currently studying for my BSc in Cyber Security at the University of Warwick.
+          </h3>
         </div>
-        <div id='wrapper'>
-            <p class='button'>Switch Colours...</p>
+      </div>
+    </div>
+    <div class="hero is-halfheight is-info">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title is-size-1">
+            ACCOLADES AND MORE INFO
+          </h1>
+          <h3 class="subtitle is-family-secondary is-size-3">
+            Here's some things I've achieved, and other links about me:
+          </h3>
+          <ul class="is-family-secondary subtitle">
+            <li>🏆 Winner of Google Code-in 2018</li>
+            <li>🏆 Dual GIAC certified (GCFE, GCIH), SANS Coin Recipient for course contribution</li>
+            <li>🏆 Winner of CyberCenturion VIII, Finalist at VII, VI</li>
+            <li>🏆 Winner of WorldSkills UK Cyber Security Final 2021</li>
+            <li>⭐ Google STEP Intern 2022</li>
+            <li>⭐ CyberStart Elite Attendee 2018-2021, Elite Talent Development Programme</li>
+            <li>⭐ Santander Team UK F2F Attendee 2019</li>
+            <li>📚 SSLC Course Representative @ Warwick</li>
+            <li>📚 CyberEPQ A + 3rd Place Deloitte Essay Prize</li>
+            <li>📚 CyberFirst Speaker, Hobby CTFer</li>
+            <li>📚 Survivor of 5 A-Levels</li>
+          </ul>
+          <h3 class="subtitle is-family-secondary">
+            For more about my life, hobbies, interests and work, see <a href="https://blog.anaisonlineto.day"><u>my blog!</u></a>
+          </h3>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
-<script>
-    var colors = randomColor({count: 3, luminosity: 'dark'});
-    document.getElementsByTagName('h2')[0].style.color=colors[0];
-    document.getElementsByTagName('a')[0].style.color=colors[1];
-    document.getElementsByTagName('a')[1].style.color=colors[1];
-    document.getElementsByTagName('a')[2].style.color=colors[1];
-    document.getElementsByClassName('button')[0].onclick = function() {
-  if(this.style.color === "black") 
-  { 
-    var colors = randomColor({count: 3, luminosity: 'dark'});
-    this.style.color="white";
-    this.style.backgroundColor="black";
-    document.getElementsByTagName('h1')[0].style.color="black";
-    document.getElementsByTagName('body')[0].style.backgroundColor="#fffefa";
-    document.getElementsByTagName('h2')[0].style.color=colors[0];
-    document.getElementsByTagName('a')[0].style.color=colors[1];
-    document.getElementsByTagName('a')[1].style.color=colors[1];
-    document.getElementsByTagName('a')[2].style.color=colors[1];
-  } else {
-    var colors = randomColor({count: 3, luminosity: 'light'});
-    this.style.color="black";
-    this.style.backgroundColor="white";
-    document.getElementsByTagName('h1')[0].style.color="white";
-    document.getElementsByTagName('body')[0].style.backgroundColor="#212121";
-    document.getElementsByTagName('h2')[0].style.color=colors[0];
-    document.getElementsByTagName('a')[0].style.color=colors[1];
-    document.getElementsByTagName('a')[1].style.color=colors[1];
-    document.getElementsByTagName('a')[2].style.color=colors[1];
-  }  
-}
-</script>
